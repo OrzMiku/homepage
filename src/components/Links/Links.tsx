@@ -12,10 +12,10 @@ interface IProps {
 function Links({ links }: IProps) {
   return (
     <ul className={styles.links}>
-      {links.map((link) => {
+      {links.map((link, index) => {
         const { text, url } = link;
         return (
-          <li>
+          <li key={index}>
             <a href={url}>[{text}]</a>
           </li>
         );
