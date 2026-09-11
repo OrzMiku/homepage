@@ -1,0 +1,4 @@
+.logo {
+  color: var(--text-primary);
+  font-size: var(--text-3xl);
+}
