@@ -38,8 +38,11 @@ function App() {
     <div className={styles.app}>
       <Logo title="OrzMiku" />
       <Bio content="求知若渴，虚心若愚" />
-      <Links links={links} />
-      <section className={styles.friends} aria-labelledby="friends">
+      <section className={styles.linkSection} aria-labelledby="links">
+        <h2 id="links">links</h2>
+        <Links links={links} />
+      </section>
+      <section className={styles.linkSection} aria-labelledby="friends">
         <h2 id="friends">friends</h2>
         <Links links={friendLinks} />
       </section>
