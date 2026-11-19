@@ -5,3 +5,13 @@
   align-items: center;
   gap: var(--space-1);
 }
+
+.friends {
+  margin-top: var(--space-4);
+  text-align: center;
+
+  h2 {
+    margin: 0 0 var(--space-1);
+    font-size: var(--text-md);
+  }
+}

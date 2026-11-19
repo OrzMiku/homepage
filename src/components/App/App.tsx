@@ -19,11 +19,17 @@ function App() {
       url: "https://github.com/OrzMiku/lunarfox",
     },
   ];
+  const friendLinks: Link[] = [{ text: "浮生若梦", url: "https://fufu.ink" }];
+
   return (
     <div className={styles.app}>
       <Logo title="OrzMiku" />
       <Bio content="求知若渴，虚心若愚" />
       <Links links={links} />
+      <section className={styles.friends} aria-labelledby="friends">
+        <h2 id="friends">friends</h2>
+        <Links links={friendLinks} />
+      </section>
     </div>
   );
 }
