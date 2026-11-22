@@ -4,12 +4,21 @@ import Logo from "../Logo/Logo";
 import styles from "./App.module.css";
 
 function App() {
-  const links: Link[] = [
+  const socialLinks: Link[] = [
     {
       text: "github",
       url: "https://github.com/OrzMiku",
-      description: "我的 GitHub 主页",
     },
+    {
+      text: "bilibili",
+      url: "https://space.bilibili.com/402606447",
+    },
+    {
+      text: "x",
+      url: "https://x.com/real_orzmiku",
+    },
+  ];
+  const projectLinks: Link[] = [
     {
       text: "neovim-config",
       url: "https://github.com/OrzMiku/neovim-config",
@@ -38,9 +47,13 @@ function App() {
     <div className={styles.app}>
       <Logo title="OrzMiku" />
       <Bio content="求知若渴，虚心若愚" />
-      <section className={styles.linkSection} aria-labelledby="links">
-        <h2 id="links">links</h2>
-        <Links links={links} />
+      <section className={styles.linkSection} aria-labelledby="social">
+        <h2 id="social">social</h2>
+        <Links links={socialLinks} />
+      </section>
+      <section className={styles.linkSection} aria-labelledby="projects">
+        <h2 id="projects">projects</h2>
+        <Links links={projectLinks} />
       </section>
       <section className={styles.linkSection} aria-labelledby="friends">
         <h2 id="friends">friends</h2>
