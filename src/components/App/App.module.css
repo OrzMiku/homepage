@@ -7,11 +7,16 @@
 }
 
 .linkSection {
+  width: calc(100% - var(--space-8));
   margin-top: var(--space-4);
   text-align: center;
 
   h2 {
     margin: 0 0 var(--space-1);
     font-size: var(--text-md);
+  }
+
+  & > ul > li {
+    flex: 0 0 min(100%, 8rem);
   }
 }
